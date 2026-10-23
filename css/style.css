@@ -63,3 +63,64 @@ legend {
   font-size: 18px; /*define o tamanho da fonte do legend como 18px */
   padding: 0 5px; /*define o preenchimento do legend como 0 acima e abaixo e 5px à esquerda e à direita */
 }
+
+label {
+  display: inline-block; /*define o display do label como inline-block */ 
+  margin-bottom: 5px; /*define a margem abaixo do label como 5px */
+}
+
+p {
+  margin-bottom: 15px; /*margem de 15px abaixo do parágrafo (texto para alguns inputs) */
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;  
+  border: 1px solid #ccc; /*define a espessura da borda do input, select e textarea como 1px, sólida e cinza */
+  border-radius: 2.5px; /*define o raio da borda do input, select e textarea como 2.5px */
+}
+
+textarea {
+  min-height: 100px; /*define a altura mínima do textarea como 100px */
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+  width: auto; /*define a largura do input radio e checkbox como automática */
+}
+
+input[type="color"] {
+  width: 50px; 
+  padding: 0 5px; /*define o preenchimento do input color como 0 acima e abaixo e 5px à esquerda e à direita  pois com as configurações anteriores */
+}
+
+input:invalid, /*aplica a cor da borda vermelha para inputs, selects e textareas inválidos */
+select:invalid, 
+textarea:invalid  {
+  border-color: red;
+}
+
+input:valid, /*aplica a cor da borda verde para inputs, selects e textareas válidos */
+select:valid, 
+textarea:valid  {
+  border-color: green;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer; /*define o cursor como pointer para indicar que é clicável */
+}
+
+button:hover {
+  background-color: green; /* Para o botão de Enviar */
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: orangered; /* Para o botão de Limpar */
+  color: white;
+}
